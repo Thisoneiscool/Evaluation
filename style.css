@@ -1,0 +1,90 @@
+:root {
+    --height-header: 60px;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+
+.title {
+    text-align: center;
+    margin: 5%;
+}
+
+.content {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: bold;
+    
+}
+
+.header {
+    width: 100%;
+    height: var(--height-header);
+    line-height: var(--height-header);
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.left_container_header, .right_container_header {
+    padding: 1rem;
+}
+
+.left_container {
+    height: 300px;
+    width: 200px;
+    overflow: auto;
+    text-align: center;
+    border: 1px solid black;
+    margin-left: 350px;
+
+}
+
+ .right_container {
+    height: 300px;
+    width: 200px;
+    overflow: auto;
+    text-align: center;
+    border: 1px solid black;
+    margin-right: 350px;
+
+}
+
+.left_container_header, .right_container_header, li {
+    border: 1px solid black
+}
+
+.left_container_container li:nth-child(2n), #right_container_container li:nth-child(2n) {
+    background-color: rgb(221, 239, 221);
+}
+
+.selected{
+    background-color: deepskyblue !important;
+}
+
+.bottom_container {
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+    text-align: center;
+}
+button#btn {
+    margin-left: 10px;
+}
+
+
+
+
